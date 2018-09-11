@@ -15,14 +15,17 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Click on the button to see redux magic.
+          <br />
           <button onClick={this.simpleAction}>Test redux action</button>
         </p>
-        <pre>
- {
-  JSON.stringify(this.props)
- }
-</pre>
+        <p className="Action-output">
+          <pre>
+          {
+            JSON.stringify(this.props)
+          }
+          </pre>
+        </p>
       </div>
     );
   }
