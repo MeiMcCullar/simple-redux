@@ -1,14 +1,17 @@
 {
-  "name": "redux-boilerplate",
+  "name": "simple-redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.5",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^4.38.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,5 +21,17 @@
   },
   "devDependencies": {
     "cypress": "^3.1.0"
-  }
+  },
+  "description": "Simple Redux",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeiMcCullar/simple-redux.git"
+  },
+  "author": "Mei McCullar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeiMcCullar/simple-redux/issues"
+  },
+  "homepage": "https://github.com/MeiMcCullar/simple-redux#readme"
 }

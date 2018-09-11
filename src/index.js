@@ -18,3 +18,7 @@ ReactDOM.render(
  document.getElementById('root')
 );
 registerServiceWorker();
+
+App.get('/', function (req, res) {
+    res.send('<h1>Hello World!</h1>')
+  })

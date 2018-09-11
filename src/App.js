@@ -6,8 +6,20 @@ import './App.css';
 
 import { simpleAction } from './actions/SimpleAction'
 
+
 class App extends Component {
   render() {
+    var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
+
     return (
       <div className="App">
         <header className="App-header">
@@ -45,3 +57,5 @@ const mapStateToProps = state => ({
  })
 
  export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+// export default app
